@@ -152,5 +152,5 @@ class Board extends React.Component{
 
 
 ReactDOM.render(<CheckBox></CheckBox>,document.getElementById('app'));
-ReactDOM.render(<Note>Hello World</Note>,document.getElementById('app'));
+ReactDOM.render(<Note>Hello :)</Note>,document.getElementById('app'));
 ReactDOM.render(<Board count={10}></Board>,document.getElementById('app'));
