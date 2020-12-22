@@ -149,6 +149,17 @@ class Board extends React.Component{
 	}
 }
 
+var cepat = 90;
+var teks = "Simple Sticky Notes with ReactJS";
+var i = 0;
+var autoText = () => {
+	if (i < teks.length) {
+		document.getElementById('t').innerHTML += teks.charAt(i);
+		i++;
+		setTimeout(autoText,cepat);
+	}
+}
+autoText();
 
 
 ReactDOM.render(<CheckBox></CheckBox>,document.getElementById('app'));
